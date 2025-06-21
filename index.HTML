@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nadir Ali – Senior Oracle Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <div class="top-right-pic">
+    <img src="profile.jpg" alt="Nadir Ali">
+  </div>
+
+  <header>
+    <div class="header-container">
+      <div class="header-text">
+        <h1>Nadir Ali</h1>
+        <p>Senior Oracle Developer | PL/SQL | SQL | REPORTS | ERP | ETL</p>
+      </div>
+    </div>
+    <nav>
+      <ul class="nav-tabs">
+        <li><a href="#" class="active" onclick="showTab('home')">Home</a></li>
+        <li><a href="#" onclick="showTab('about')">About Me</a></li>
+        <li><a href="#" onclick="showTab('projects')">Projects</a></li>
+        <li><a href="#" onclick="showTab('certs')">Certifications</a></li>
+        <li><a href="#" onclick="showTab('contact')">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Left Tech Stack -->
+  <div class="left-tech-stack">
+    <ul class="tech-stack">
+      <li><i class="fas fa-database"></i>PL/SQL</li>
+      <li>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100">
+          <text x="0" y="75" font-family="Arial, sans-serif" font-size="80" fill="#e60000">ORACLE</text>
+        </svg>
+        <span>Oracle</span>
+      </li>
+      <li><i class="fas fa-exchange-alt"></i>ETL</li>
+      <li><i class="fas fa-chart-line"></i>Reports</li>
+      <li><i class="fas fa-code"></i>Forms</li>
+      <li><i class="fas fa-project-diagram"></i>ERP</li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    <section id="home" class="tab-content">
+      <h2>Welcome</h2>
+      <p>
+        Welcome to my professional portfolio website. I’m Nadir Ali — a dedicated and detail-oriented Senior Oracle Developer with a strong foundation in enterprise database systems and ERP solutions.
+      </p>
+      <p>
+        This site showcases my background, major projects, certifications, and the services I offer in Oracle development, performance tuning, PL/SQL programming, and data integration.
+      </p>
+      <p>
+        Feel free to explore the tabs above to learn more about my experience and achievements. If you’d like to connect or collaborate, don’t hesitate to reach out via the contact section.
+      </p>
+    </section>
+
+    <section id="about" class="tab-content" style="display:none;">
+      <h2>About Me</h2>
+      <p><strong>Name:</strong> Nadir Ali</p>
+      <p><strong>Title:</strong> Senior Oracle Developer</p>
+      <p><strong>Experience:</strong> 10+ years</p>
+      <p><strong>Expertise:</strong> Oracle PL/SQL, SQL, Forms & Reports, ERP, ETL Pipelines, Performance Tuning, Data Security</p>
+      <p>
+        I am a results-driven Oracle Developer with a strong track record of delivering enterprise-grade database solutions. I specialize in designing scalable PL/SQL logic, optimizing reports, integrating ERP modules, and building secure, performance-optimized systems.
+      </p>
+      <p>
+        Passionate about data integrity, performance, and elegant software design, I aim to bring innovation and structure to every project I lead or support.
+      </p>
+      <a href="Nadir_Ali_Resume.pdf" target="_blank" class="resume-button">📄 Download My Resume</a>
+    </section>
+  </main>
+
+  <!-- Right Contact Box -->
+  <div class="floating-contact-box">
+    <h4>Let’s Work Together</h4>
+    <ul class="contact-buttons">
+      <li><a href="Nadir_Ali_Resume.pdf" target="_blank" class="resume-btn"><i class="fas fa-file-alt"></i> Resume</a></li>
+      <li><a href="#" onclick="showTab('contact')" class="contact-btn"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+  </div>
+
+  <script>
+    function showTab(tabId) {
+      const tabs = document.querySelectorAll('.tab-content');
+      tabs.forEach(tab => tab.style.display = 'none');
+      document.getElementById(tabId).style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
