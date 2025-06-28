@@ -174,3 +174,66 @@ main {
 .resume-btn:hover, .contact-btn:hover {
   background-color: #218838;
 }
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin-top: 15px;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 20px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.styled-table thead th {
+  background-color: #1e2a38;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #f2f2f2;
+  transition: background-color 0.2s ease;
+}
+
+.styled-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+
+.contact-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.contact-icons a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  background-color: #1e2a38;
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background 0.3s, transform 0.2s;
+  font-size: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.contact-icons a:hover {
+  background-color: #1abc9c;
+  transform: translateY(-2px);
+}
+
+.contact-icons i {
+  font-size: 20px;
+}
